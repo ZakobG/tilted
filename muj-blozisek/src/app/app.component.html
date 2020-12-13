@@ -1,0 +1,10 @@
+<nav>
+  <input *ngModel="dunno">
+  <ul>
+    <li><a *ngIf="dunno.includes('home')" href="#">Home</a></li>
+    <li><a *ngIf="dunno.includes('contact')" routerLink="/contact">Contact</a></li>
+    <li><a *ngIf="dunno.includes('second-page')" routerLink="/second-page">Second Page</a></li>
+  </ul>
+</nav>
+
+<router-outlet></router-outlet>
